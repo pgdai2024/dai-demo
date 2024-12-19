@@ -44,3 +44,36 @@ def multiplication_calculator():
 
 # Run the calculator
 multiplication_calculator()
+
+# Simple Calculator with Subtraction Function
+def multiply(num1, num2):
+    """
+    Function to multiply two numbers.
+    """
+    return num1 * num2
+
+def subtract(num1, num2):
+    """
+    Function to subtract the second number from the first.
+    """
+    return num1 - num2
+
+def subtraction_calculator():
+    print("Welcome to the Subtraction Calculator!")
+    
+    try:
+        # Take input from the user
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        
+        # Call the subtract function
+        result = subtract(num1, num2)
+        
+        # Display the result
+        print(f"The result of subtracting {num2} from {num1} is: {result}")
+    except ValueError:
+        print("Error: Please enter valid numbers.")
+
+# Run the subtraction calculator
+subtraction_calculator()
+
